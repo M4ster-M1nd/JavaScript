@@ -1,8 +1,47 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #a3a3a3;
   color:rgb(3, 3, 3);
   }
 
-  table {
-    margin: 10px;
-  }
+.section{
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.section__title {
+  margin: 10px 30px;
+}
+
+.station-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.station-list__title {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.station-list__item {
+  display: block;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px 20px;
+  border: #b1afbf;
+  border-color: #e0dcfa;
+  background-color: #e9e8e8;
+  
+}
+
+.data {
+  display: inline-block;
+}
+
+.data__name {
+  color: #808080;
+}
+
+.data__value {
+  color: #404040;
+}
