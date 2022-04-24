@@ -1,11 +1,41 @@
 body {
   background-color: #a3a3a3;
-  color:rgb(3, 3, 3);
+  color:rgb(8, 8, 8);
   }
 
 .section{
   border-radius: 3px;
   background-color: #ffffff;
+  display: flex;
+}
+
+.section__left-content{
+flex: 1 1;
+}
+
+.section__right-content{
+  flex: 0 0 200px;
+}
+
+.route-search {
+display: flex;
+margin: 10px 100px;
+}
+
+.route-search__input-box {
+flex: 2 0 200px;
+}
+
+.route-search__input-box input{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.route-search__submit-box{
+flex: 1 0 100px;
+}
+.route-search__submit-box button{
+  width: 100%;
 }
 
 .section__title {

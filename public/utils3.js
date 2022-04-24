@@ -24,19 +24,19 @@ function createTrain(id, type) {
 
 let _routeIds = 1
 
-function createRoute(name, stations) {
+function createRoute(name, stationsIds) {
 
     return {
         id: _routeIds++,
         name,
-        stations_list
+        stationsIds: [...stationsIds]
     };
 
 }
 
 let _runIds = 1
 
-function createRun(id, train, route, date) {
+function createRun(trainId, routeId, date) {
 
     return {
         id: _runIds++,

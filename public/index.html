@@ -10,25 +10,64 @@
 </head>
 
 <body>
+  <div class="route-search">
+    <form action method enctype id='form'>
+      <div class="route-search__input-box">
+        <input name="src">
+      </div>
+      <div class="route-search__input-box">
+        <input name="dst">
+      </div>
+      <div class="route-search__submit-box">
+        <button type="submit" id="form-submit">ПОИСК</button>
+      </div>
+    </form>
+  </div>
   <section class="section">
-    <h3 class="section__title">Станции</h3>
-    <div class="section__content">
-      <ul class="station-list" id="station-list">
-        <template id="station-list__item">
-          <li class="station-list__item">
-            <h4 class="station-list__title" data-source="name">
-              Станция
-            </h4>
+    <div class="section__left-content">
+      <h3 class="section__title">Станции</h3>
 
-            <div class="station-list__info">
-              <span class="data">
-                <span class="data__name">ID:</span>
-                <span class="data__value" data-source="id"> 0</span>
-              </span>
-            </div>
-          </li>
-        </template>
-      </ul>
+      <div class="section__content">
+        <ul class="station-list" id="station-list">
+          <template id="station-list__item">
+            <li class="station-list__item">
+              <h4 class="station-list__title" data-source="name">
+                Станция
+              </h4>
+
+              <div class="station-list__info">
+                <span class="data">
+                  <span class="data__name">ID:</span>
+                  <span class="data__value" data-source="id"> 0</span>
+                </span>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section__right-content">
+      <h3 class="section__title">Маршруты</h3>
+
+      <div class="section__content">
+        <ul class="station-list" id="route-list">
+          <template id="route-list__item">
+            <li class="station-list__item">
+              <h4 class="station-list__title" data-source="name">
+                Станция
+              </h4>
+
+              <div class="station-list__info">
+                <span class="data">
+                  <span class="data__name">ID:</span>
+                  <span class="data__value" data-source="id"> 0</span>
+                </span>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
     </div>
 
   </section>
